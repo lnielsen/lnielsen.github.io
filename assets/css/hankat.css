@@ -1,0 +1,53 @@
+.hero-unit .portrait {
+	float: right;
+	margin: 10px;
+}
+
+.cv-work {
+	margin-bottom: 20px;
+}
+
+.cv-work small {
+	color: #999999;
+	font-weight: normal;
+}
+
+.cv-work .cv-jobtitle {
+	color: #3e9eff;
+	font-weight: bold;
+	font-size: 16px;	
+}
+
+.cv-work .cv-jobtitle small {
+	font-size: 13px;
+}
+
+.cv-work .cv-company {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.cv-work .cv-company .cv-desc {
+	font-weight: normal;
+	font-size: 13px;
+	margin-top: 10px;	
+}
+
+.cv-work .cv-company .cv-location {
+	font-weight: normal;
+	font-size: 13px;
+	display: inline;
+	margin-left: 7px;
+	color: #999999;
+}
+
+.cv-work > ul {
+	margin-top: 10px;
+	
+}
+
+
+.imageref {
+	margin-bottom: 30px;
+	
+}
