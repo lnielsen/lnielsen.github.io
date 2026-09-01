@@ -1,117 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
-<title>Hankat.dk - Lars Holm Nielsen</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Lars Holm Nielsen">
-
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<style type="text/css">
-body {
-	padding-top: 60px;
-	padding-bottom: 40px;
-}
-</style>
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="assets/css/hankat.css" rel="stylesheet">
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<link rel="shortcut icon" href="assets/ico/favicon.ico">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
-					<span class="icon-bar"></span> <span class="icon-bar"></span>
-				</a> <a class="brand" href="/">hankat.dk</a>
-				<div class="nav-collapse">
-					<ul class="nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="cv.html">Curriculum Vitae</a></li>
-						<li><a href="publications.html">Publications</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lars Holm Nielsen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&amp;family=Manrope:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #FBFAF7; }
+  * { box-sizing: border-box; }
+  a { color: #1B4D46; text-decoration: none; }
+  a:hover { opacity: .75; }
+  ::selection { background: #D8E4E0; }
+</style>
+</helmet>
+<div style="background:#FBFAF7;color:#191813;font-family:Manrope,system-ui,sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased">
 
-	<div class="container">
-		<div class="hero-unit">
-			<div class="row">
-				<div class="span11">
-					<div class="portrait">
-						<img src="img/holm_web.jpg" alt="Lars Holm Nielsen" />
-					</div>
-					<h1>Lars Holm Nielsen</h1>
+  <header style="max-width:1080px;margin:0 auto;padding:32px 40px;display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap">
+    <a href="#top" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#191813">hankat.dk</a>
+    <nav style="display:flex;gap:28px;font-size:14px;font-weight:500;flex-wrap:wrap;white-space:nowrap">
+      <a href="#now" style="color:#57544A">Now</a>
+      <a href="#open-research" style="color:#57544A">Open research</a>
+      <a href="#arc" style="color:#57544A">How I got here</a>
+      <a href="#how" style="color:#57544A">How I work</a>
+      <a href="#contact" style="color:#191813">Contact</a>
+    </nav>
+  </header>
 
-					<p>
-						<strong>Engineer/Product Manager-hybrid</strong>
-					</p>
-					<p>
-		                I am currently Software Engineer at <a href="http://www.cern.ch">CERN</a> &mdash; where I've launched <a href="http://zenodo.org">
-		                ZENODO</a>, an innovative research data management service for long-tail science.
-					</p>
-					<p>My specialities includes bringing innovative web-based products from the initial thought to successful launch in short time.</p>
-					<p>
-						<a class="btn btn-primary btn-large" href="cv.html">Learn more &raquo;</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="span4">
-				<h2>Find me on</h2>
-				<ul>
-					<li><a href="http://www.linkedin.com/pub/0/70b/701">LinkedIn</a></li>
-					<li><a href="http://www.twitter.com/larshankat">Twitter</a></li>
-				</ul>
-			</div>
-			<div class="span4">
-				<h2>Contact</h2>
-				Lars Holm Nielsen
-				<br />
-				Genève, Switzerland
-				<br />
-				Email: <a href="mailto:lars@hankat.dk">lars@hankat.dk</a>
-				<p></p>
-			</div>
-			<div class="span4">
-				<h2>Work</h2>
-				<p>
-					CERN, IT Department, Digital Repositories
-					<br />
-					Genève, Switzerland
-					<br />
-					Email: <a href="mailto:lars.holm.nielsen@cern.ch">lars.holm.nielsen@cern.ch</a>
-				</p>
-			</div>
-		</div>
+  <section style="max-width:1080px;margin:0 auto;padding:56px 40px 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:72px;align-items:start">
+    <div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 28px">Geneva, Switzerland</p>
+      <h1 style="font-family:Newsreader,Georgia,serif;font-weight:300;font-size:clamp(44px,5.4vw,76px);line-height:1.02;letter-spacing:-0.02em;margin:0 0 28px;text-wrap:balance">Lars Holm Nielsen</h1>
+      <p style="font-size:21px;line-height:1.55;color:#38352D;margin:0 0 22px;max-width:38ch;text-wrap:pretty">Continuous Improvement Lead at CERN. For most of my career I've been a tools builder for research — lately I've been pointing that same instinct one level up, at how a whole organisation learns and improves.</p>
+      <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0 0 18px;max-width:54ch;text-wrap:pretty">What's driven me the whole way isn't a career plan but a deep curiosity about people, technology, and science.</p>
+      <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0 0 36px;max-width:54ch;text-wrap:pretty">I'm Danish, based near Geneva, and I try to stay practical and realistic about organisations <em>and life</em> — in all their messiness and their beauty. The work that lasts is rarely about imposing tidy systems on people; it's about paying real attention to how they actually work, and building with the grain of that.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a id="cta" href="#contact" style="display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;background:#1B4D46;color:#FBFAF7;font-size:14px;font-weight:600;white-space:nowrap">Get in touch</a>
+        <a href="https://www.linkedin.com/in/lars-holm-nielsen-70170b/" style="display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;border:1px solid #DAD5C9;color:#191813;font-size:14px;font-weight:600;white-space:nowrap" style-hover="border-color:#191813">Full background on LinkedIn</a>
+      </div>
+    </div>
+    <sc-if value="{{ showPortrait }}" hint-placeholder-val="{{ true }}">
+      <div style="position:relative">
+        <img src="./images/portrait.png" alt="Lars Holm Nielsen" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 50%;border-radius:14px" />
+      </div>
+    </sc-if>
+  </section>
 
-		<hr>
-		<footer>
-			<p>&copy; 2016 Lars Holm Nielsen</p>
-		</footer>
-	</div>
-	<script src="assets/js/jquery.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-transition.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-alert.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-modal.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-tab.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-popover.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-button.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script>
+  <section id="now" style="border-top:1px solid #E7E2D6;background:#F4F2EC">
+    <div style="max-width:1080px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 72px;align-items:start">
+      <div>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">Now</p>
+        <p style="font-size:15px;font-weight:line-height:1.6;color:#57544A;margin:0"><strong>Continuous Improvement Lead</strong><br>Organisational Support &amp; Improvement (OSI) Department, CERN<br>Since January 2026</p>
+      </div>
+      <div>
+        <p style="font-family:Newsreader,Georgia,serif;font-weight:300;font-size:clamp(26px,2.8vw,38px);line-height:1.25;letter-spacing:-0.015em;margin:0 0 28px;color:#191813;text-wrap:pretty">Talking more about <em>how</em> we do the work, not just the work itself.</p>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0 0 16px;max-width:58ch;text-wrap:pretty">Every day people at CERN already try to improve their work. What's new is the structure: I'm part of a small unit set up in January 2026 on Operational Excellence. My part is bringing structured methodologies, supporting teams as they improve, and removing barriers along the way. Continuous Improvement, for me, is bigger than any single framework — it grows out of years in software development: agile, retrospectives, and the everyday habit of a team getting steadily better at how it works together, and the challenges in sustaining the improvements.</p>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0;max-width:58ch;text-wrap:pretty">Lean and Lean Six Sigma are where I'm primarily focused now: a toolbox and a set of principles that align closely with how I think. Alongside setting up the practice, I lead concrete improvement projects end-to-end, alongside the people closest to the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="open-research" style="border-top:1px solid #E7E2D6">
+    <div style="max-width:1080px;margin:0 auto;padding:72px 40px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 72px;align-items:start;margin:0 0 56px">
+        <div>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">CERN, 2012 onward</p>
+          <h2 style="font-family:Newsreader,Georgia,serif;font-weight:300;font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-0.02em;margin:0">Building the tools of open research</h2>
+        </div>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0;max-width:58ch;text-wrap:pretty">Roughly 14 years as a tools builder at CERN for research: making it easier for researchers worldwide to share, preserve, and reuse research in all its forms — and building the open-source communities around those tools.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:44px 56px">
+        <div>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">Zenodo</p>
+          <p style="font-size:15px;line-height:1.65;color:#38352D;margin:0 0 16px;text-wrap:pretty">Co-founded and helped lead it into a global open research repository used by 500,000+ people across 161 countries — somewhere any researcher can share and preserve their work, whatever form it takes.</p>
+          <a href="https://zenodo.org" style="font-size:14px;font-weight:600">zenodo.org →</a>
+        </div>
+        <div>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">InvenioRDM</p>
+          <p style="font-size:15px;line-height:1.65;color:#38352D;margin:0 0 16px;text-wrap:pretty">Built and nurtured a welcoming open-source community — a collaboration of 30+ research institutions across the world, and the platform under modern research data management.</p>
+          <a href="https://inveniosoftware.org" style="font-size:14px;font-weight:600">inveniosoftware.org →</a>
+        </div>
+        <div>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">Stewardship</p>
+          <p style="font-size:15px;line-height:1.65;color:#38352D;margin:0 0 16px;text-wrap:pretty">Championed open science, FAIR research and open source community building — the tools mattered, but so did the stewardship and the people who kept them alive, also after I left. And I wrote my share of research funding proposals, and managed the associated projects.</p>
+        </div>
+      </div>
+      <figure style="margin:56px 0 0">
+        <img src="./images/zenodo.webp" alt="Zenodo" style="display:block;width:100%;aspect-ratio:1200/756;object-fit:cover;object-position:50% 50%;border-radius:14px" />
+        <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8A857A;margin:12px 0 0">Zenodo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="arc" style="border-top:1px solid #E7E2D6;background:#F4F2EC">
+    <div style="max-width:1080px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 72px;align-items:start">
+      <div>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">1996 – 2012</p>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:300;font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-0.02em;margin:0 0 32px">How I got here</h2>
+        <figure style="margin:0">
+          <img src="./images/crab-nebula.jpg" alt="The Crab Nebula" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 50%;border-radius:14px" />
+          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#8A857A;margin:12px 0 0">The Crab Nebula made with FITS Liberator and the study subject of one of my first astronomy exercises.&nbsp;<i>Credit:&nbsp;NASA, ESA and Allison Loll/Jeff Hester (Arizona State University). Acknowledgement: Davide De Martin (ESA/Hubble).</i></figcaption>
+        </figure>
+      </div>
+      <div>
+        <p style="font-size:16px;line-height:1.7;color:#38352D;margin:0 0 18px;max-width:58ch;text-wrap:pretty">I built my first website in 1996 as a teenager on an Amiga 1200 running Apache and Perl CGI scripts — the prehistoric days of dial-up, when getting online meant tying up the family phone line and first winning the shared computer back from my brother.</p>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0 0 18px;max-width:58ch;text-wrap:pretty">What came after wasn't a plan so much as a series of things that caught my curiosity. <strong style="color:#191813;font-weight:600">ThinkQuest</strong>, the international contest for building educational websites, where I won several times with my team. My professional career started in 1999 at <strong style="color:#191813;font-weight:600">Xenux</strong>, a small Copenhagen startup. Then the <strong style="color:#191813;font-weight:600">Tycho Brahe Planetarium</strong>, where I built their website.</p>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0 0 18px;max-width:58ch;text-wrap:pretty">Afterwards astronomy — freelance and later on-site at the <strong style="color:#191813;font-weight:600">European Southern Observatory</strong>, building the tools behind the images: the <strong style="color:#191813;font-weight:600">FITS Liberator</strong>, which turns raw telescope data into the colourful pictures people actually see, and the websites for e.g. the <strong style="color:#191813;font-weight:600">Hubble Space Telescope</strong>.</p>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0;max-width:58ch;text-wrap:pretty">You could draw a neat line through all of it, but there wasn't one at the time. Life takes you places you didn't plan; the curiosity is what carried me, eventually, to CERN in 2012.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="border-top:1px solid #E7E2D6">
+    <div style="max-width:1080px;margin:0 auto;padding:72px 40px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin:0 0 48px;flex-wrap:wrap">
+        <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0">How I work</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:44px 72px">
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-0.01em;margin:0 0 12px">People first, always</h3>
+          <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">The work I'm proudest of isn't a repository or a process — it's the people I've helped grow. I build teams where honest feedback is normal, safe, and genuinely useful. The real measure has been people telling me, years later, that it made a lasting difference to them. But don't take my word for it — ask someone I've worked with.</p>
+        </div>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-0.01em;margin:0 0 12px">Curiosity as a method</h3>
+          <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">A deep interest in people, technology, and science is what got me here, and it's still how I meet a problem — understand it well enough before rushing to fix it.</p>
+        </div>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-0.01em;margin:0 0 12px">Practical before ideal</h3>
+          <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">I start from how people and organisations actually behave, not how magical thinking  wishes they would. Messy reality is the material you design with.</p>
+        </div>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-0.01em;margin:0 0 12px">Communities, not roll-outs</h3>
+          <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">The improvements that last are owned by the people doing the work — whether that's an open-source community or a Continuous Improvement culture taking its first steps.</p>
+        </div>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-0.01em;margin:0 0 12px">Rigour with a human grain</h3>
+          <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">The methods — agile and retrospectives, Lean and Six Sigma, and a lot of years leading teams — give the structure; understanding how people really think and work is what makes change stick.</p>
+        </div>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:-0.01em;margin:0 0 12px">Never a solo act</h3>
+          <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">Almost nothing in life is done alone. Everything here — the tools, the communities, the teams — was built with people, not by me on my own. I tend to say "we" because it's true.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beyond" style="border-top:1px solid #E7E2D6;background:#F4F2EC">
+    <div style="max-width:1080px;margin:0 auto;padding:56px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px 72px;align-items:start">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0">Beyond CERN</p>
+      <div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:24px;letter-spacing:-0.01em;margin:0 0 10px">Ethics &amp; Professional Conduct Committee</h3>
+        <p style="font-size:15px;line-height:1.7;color:#5D594E;margin:0;max-width:58ch;text-wrap:pretty">I serve on the joint committee for the University of Geneva and HES-SO Geneva, mandate through 2029 — bringing research integrity and professional conduct into a formal advisory role.</p>
+      </div>
+    </div>
+  </section>
+
+    <section id="how" style="border-top:1px solid #E7E2D6">
+    <div style="max-width:1080px;margin:0 auto;padding:72px 40px">
+      <div>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 12px">About the name</p>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:24px;letter-spacing:-0.01em;margin:0 0 10px">Why "hankat"?</h3>
+        <p style="font-size:16px;line-height:1.7;color:#5D594E;margin:0;text-wrap:pretty">Hankat is Danish for tomcat. Back in 2001 I wanted something short and memorable for an email address, and even then a good domain was hard to come by — so this is what it turned into. I've since learned that, as a Dane, spelling it out to a French speaker here in the Geneva region can be its own small adventure.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="border-top:1px solid #E7E2D6;background:#191813;color:#EFEDE5">
+    <div style="max-width:1080px;margin:0 auto;padding:72px 40px 40px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:48px;align-items:start">
+        <div>
+          <h2 style="font-family:Newsreader,Georgia,serif;font-weight:300;font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-0.02em;margin:0 0 18px">Say hello.</h2>
+          <div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0">Personal</p>
+              <a href="mailto:lars@hankat.dk" style="font-size:18px;color:#EFEDE5;border-bottom:1px solid #4A473E;padding-bottom:2px">lars@hankat.dk</a>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0">CERN</p>
+              <a href="mailto:lars.holm.nielsen@cern.ch" style="font-size:18px;color:#EFEDE5;border-bottom:1px solid #4A473E;padding-bottom:2px">lars.holm.nielsen@cern.ch</a>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 6px">Elsewhere</p>
+          <a href="https://www.linkedin.com/in/lars-holm-nielsen-70170b/" style="font-size:15px;color:#C9C5B9">LinkedIn</a>
+          <a href="https://github.com/lnielsen" style="font-size:15px;color:#C9C5B9">GitHub</a>
+          <a href="https://orcid.org/0000-0001-8135-3489" style="font-size:15px;color:#C9C5B9">ORCID</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A857A;margin:0 0 6px">Work</p>
+          <p style="font-size:15px;line-height:1.6;color:#C9C5B9;margin:0">CERN<br><a href="https://osi-dep.web.cern.ch" style="font-size:15px;color:#C9C5B9">Organisational Support &amp; Improvement (OSI) Department</a><br>Geneva, Switzerland</p>
+        </div>
+      </div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6B675D;margin:72px 0 0">© 2026 Lars Holm Nielsen</p>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#1B4D46&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#1B4D46&quot;,&quot;#2B3A67&quot;,&quot;#7A3B20&quot;,&quot;#191813&quot;],&quot;section&quot;:&quot;Style&quot;},&quot;showPortrait&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  syncAccent() {
+    const accent = this.props.accent || "#1B4D46";
+    let el = document.getElementById("__accent");
+    if (!el) { el = document.createElement("style"); el.id = "__accent"; document.head.appendChild(el); }
+    el.textContent = `a{color:${accent}}#cta{background:${accent}!important}`;
+  }
+  componentDidMount() { this.syncAccent(); }
+  componentDidUpdate() { this.syncAccent(); }
+  renderVals() {
+    return { showPortrait: this.props.showPortrait ?? true };
+  }
+}
+</script>
 </body>
 </html>
